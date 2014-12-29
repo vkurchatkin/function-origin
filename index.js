@@ -2,7 +2,7 @@ var binding = require('bindings')('function_origin');
 
 function FunctionOrigin(fn) {
   if (!(this instanceof FunctionOrigin))
-    throw new FunctionOrigin(fn);
+    return new FunctionOrigin(fn);
 
   if (typeof fn !== 'function')
     throw new TypeError('Argument is not a function');
