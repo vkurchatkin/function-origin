@@ -18,7 +18,8 @@ var origin = FunctionOrigin(someFn);
 
  - `file`;
  - `line`;
- - `column`.
+ - `column`
+ - `scriptId` (`>=v0l.12` only).
 
 # License
 

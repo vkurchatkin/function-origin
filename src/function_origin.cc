@@ -18,6 +18,11 @@ NAN_METHOD(SetOrigin) {
   target->Set(NanNew<String>("column"),
     NanNew<Integer>(fn->GetScriptColumnNumber()));
 
+#if NODE_MODULE_VERSION >= NODE_0_12_MODULE_VERSION
+  target->Set(NanNew<String>("scriptId"),
+    NanNew<Integer>(fn->ScriptId()));
+#endif
+
   NanReturnUndefined();
 }
 
