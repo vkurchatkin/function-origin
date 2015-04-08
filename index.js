@@ -10,6 +10,7 @@ function FunctionOrigin(fn) {
   this.file = null;
   this.line = null;
   this.column = null;
+  this.scriptId = null;
 
   binding.SetOrigin(fn, this);
 }
