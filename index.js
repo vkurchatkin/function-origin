@@ -10,6 +10,7 @@ function FunctionOrigin(fn) {
   this.file = null;
   this.line = null;
   this.column = null;
+  this.inferredName = null;
 
   binding.SetOrigin(fn, this);
 }

@@ -18,6 +18,8 @@ NAN_METHOD(SetOrigin) {
   target->Set(NanNew<String>("column"),
     NanNew<Integer>(fn->GetScriptColumnNumber()));
 
+  target->Set(NanNew<String>("inferredName"), fn->GetInferredName());
+
   NanReturnUndefined();
 }
 
