@@ -18,7 +18,8 @@ var origin = FunctionOrigin(someFn);
 
  - `file`;
  - `line`;
- - `column`.
+ - `column`
+ - `inferredName`.
 
 # License
 
