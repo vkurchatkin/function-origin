@@ -1,6 +1,6 @@
 # function-origin
 
-Get origin of a function
+Get origin of a function in io.js and node.js
 
 # Usage
 
@@ -16,9 +16,9 @@ var origin = FunctionOrigin(someFn);
 ```
 `origin` has the following properties:
 
- - `file`;
- - `line`;
- - `column`
+ - `file` — source file name;
+ - `line` — line number (0-based);
+ - `column` — column number (0-based);
  - `inferredName`.
 
 # License
