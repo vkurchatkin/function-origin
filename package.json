@@ -4,7 +4,7 @@
   "description": "Get origin of a function",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test/runner.js"
   },
   "author": "Vladimir Kurchatkin <vladimir.kurchatkin@gmail.com>",
   "repository": "vkurchatkin/function-origin",
