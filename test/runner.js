@@ -28,7 +28,6 @@ info = FunctionOrigin(fixtures.assignedFn);
 assert.equal(info.file, fixturesPath);
 assert.equal(info.line, 5);
 assert.equal(info.column, 26);
-assert.equal(fixtures.assignedFn.name, '');
 assert.equal(info.inferredName, 'assignedFn');
 
 var boundFunction = fixtures.TestFn.bind({});
