@@ -30,3 +30,10 @@ assert.equal(info.line, 5);
 assert.equal(info.column, 26);
 assert.equal(fixtures.assignedFn.name, '');
 assert.equal(info.inferredName, 'assignedFn');
+
+var boundFunction = fixtures.TestFn.bind({});
+info = FunctionOrigin(boundFunction);
+assert.equal(info.file, fixturesPath);
+assert.equal(info.line, 2);
+assert.equal(info.column, 15);
+assert.equal(info.inferredName, '');
