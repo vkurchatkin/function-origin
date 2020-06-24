@@ -27,9 +27,6 @@ NAN_METHOD(SetOrigin) {
 
   Nan::Set(target, Nan::New<String>("file").ToLocalChecked(), origin.ResourceName()).Check();
 
-
-  target->Set(Nan::New<String>("file").ToLocalChecked(), origin.ResourceName());
-
   Nan::Set(target, Nan::New<String>("line").ToLocalChecked(),
               Nan::New<Integer>(fn->GetScriptLineNumber())).Check();
 
